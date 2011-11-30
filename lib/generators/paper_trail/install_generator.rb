@@ -13,8 +13,8 @@ module PaperTrail
     desc 'Generates (but does not run) a migration to add a versions table.'
 
     def create_migration_file
-      migration_template 'create_versions.rb', 'db/migrate/create_versions.rb'
-      migration_template 'add_object_changes_column_to_versions.rb', 'db/migrate/add_object_changes_column_to_versions.rb' if options.with_changes?
+      migration_template 'create_paper_trail_versions.rb', 'db/migrate/create_paper_trail_versions.rb'
+      migration_template 'add_object_changes_column_to_paper_trail_versions.rb', 'db/migrate/add_object_changes_column_to_paper_trail_versions.rb' if options.with_changes?
     end
   end
 end
