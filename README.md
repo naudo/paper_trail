@@ -335,7 +335,7 @@ To find out who made a `version`'s object look that way, use `version.originator
 
 You can specify custom version subclasses with the `:class_name` option:
 
-    class PostVersion < Version
+    class PostVersion < PaperTrail::Version
       # custom behaviour, e.g:
       set_table_name :post_versions
     end
